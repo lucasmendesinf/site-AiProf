@@ -519,21 +519,38 @@ body.nav-open { overflow: hidden; }
 }
 
 @media (max-width: 760px) {
-  body { font-size: 14px; }
-  .site-header { height: auto; min-height: 72px; padding: 12px 16px; }
-  .brand-link img { width: 148px; }
+  body { font-size: 16px; }
+  .site-header { height: auto; min-height: 76px; padding: 14px 16px; }
+  .brand-link img { width: 156px; }
   .header-actions { gap: 8px; }
   .header-actions .primary-button { display: none; }
-  .mobile-nav { top: 72px; max-height: calc(100vh - 72px); }
+  .header-actions .secondary-button { min-height: 46px; padding: 12px 18px; font-size: 15px; }
+  .menu-toggle { width: 48px; height: 48px; }
+  .menu-toggle-bar { left: 12px; right: 12px; height: 2.5px; }
+  .menu-toggle-bar:nth-child(1) { top: 17px; }
+  .menu-toggle-bar:nth-child(2) { top: 23px; }
+  .menu-toggle-bar:nth-child(3) { top: 29px; }
+  .menu-toggle.is-active .menu-toggle-bar:nth-child(1) { top: 23px; }
+  .menu-toggle.is-active .menu-toggle-bar:nth-child(3) { top: 23px; }
+  .mobile-nav { top: 76px; max-height: calc(100vh - 76px); }
+  .mobile-nav a { padding: 18px 22px; font-size: 17px; }
+  .mobile-nav-actions .button { min-height: 50px; font-size: 16px; }
+  .eyebrow { font-size: 12px; letter-spacing: 1px; }
   .hero { min-height: auto; padding-top: 38px; }
-  .hero h1 { font-size: clamp(30px, 8vw, 38px); line-height: 1.08; }
-  .lead { font-size: 16px; }
+  .hero h1 { font-size: clamp(32px, 9vw, 42px); line-height: 1.1; }
+  .lead { font-size: 17px; }
+  .trust-line { font-size: 14px; }
   .product-preview { grid-template-columns: 1fr; min-height: 0; }
   .preview-sidebar { display: none; }
   .preview-main { padding: 18px; }
   .preview-stats, .problem-grid, .steps, .feature-grid, .plans, .split-section, .ai-section, .site-footer { grid-template-columns: 1fr; }
   .school-panel { grid-template-columns: 1fr; }
-  .site-footer nav { justify-content: flex-start; }
+  .steps span, .feature-grid span { width: 48px; height: 48px; }
+  .steps span { font-size: 17px; }
+  .feature-grid span svg { width: 24px; height: 24px; }
+  h3 { font-size: 19px; }
+  .site-footer nav { justify-content: flex-start; font-size: 14px; }
+  .site-footer p { font-size: 13px; }
   .auth-page { padding: 16px; }
   .auth-card { padding: 30px 24px; }
   .auth-card h1 { font-size: 26px; }
