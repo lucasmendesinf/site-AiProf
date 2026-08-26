@@ -6,9 +6,10 @@ $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' :
 $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $encodedBase = trim($siteBase, '/') === '' ? '' : '/' . implode('/', array_map('rawurlencode', explode('/', trim($siteBase, '/'))));
 $absoluteBase = $scheme . '://' . $host . $encodedBase;
-$signupUrl = $siteBase . '/cadastro/';
-$loginUrl = $siteBase . '/login/';
-$appUrl = '/Pareceres/index.php';
+// Sistema real (banco de dados/sessão). Local: /Pareceres. Em produção: /app.
+$appBase = (strpos($host, 'localhost') !== false) ? '/Pareceres' : '/app';
+$loginUrl = $appBase . '/login.php';
+$signupUrl = $appBase . '/login.php?signup=1';
 ?><!doctype html>
 <html lang="pt-BR">
 <head>

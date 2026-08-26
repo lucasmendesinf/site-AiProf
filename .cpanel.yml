@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/calutecc/repositories/site-AiProf/
+    - /bin/rm -rf $DEPLOYPATH/app
+    - /bin/ln -sfn /home/calutecc/repositories/SISTEMA-DE-PARECERES $DEPLOYPATH/app
