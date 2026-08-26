@@ -1,0 +1,5 @@
+DirectoryIndex index.php index.html
+RewriteEngine On
+RewriteRule ^cadastro/?$ cadastro/ [L]
+RewriteRule ^login/?$ login/ [L]
+RewriteRule ^app/?$ app/ [L]
