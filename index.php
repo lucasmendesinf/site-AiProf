@@ -244,7 +244,7 @@ $signupUrl = $appBase . '/login.php?signup=1';
           <p class="plan-badge">Mais recursos</p>
           <p class="eyebrow">ANUAL</p>
           <h3>Plano Anual</h3>
-          <div class="plan-price"><span class="plan-price-value">R$ 129,90</span><span class="plan-price-period">/mês</span></div>
+          <div class="plan-price"><span class="plan-price-value">R$ 129,90</span><span class="plan-price-period">/anual</span></div>
           <p class="plan-note">Cobrança anual.</p>
           <ul class="plan-features">
             <li>Tudo do plano semestral</li>
