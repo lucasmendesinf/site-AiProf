@@ -227,7 +227,7 @@ $signupUrl = $appBase . '/login.php?signup=1';
         <article class="plan-card">
           <p class="eyebrow">SEMESTRAL</p>
           <h3>Plano Semestral</h3>
-          <div class="plan-price"><span class="plan-price-value">R$ 69,90</span><span class="plan-price-period">/mês</span></div>
+          <div class="plan-price"><span class="plan-price-value">R$ 69,90</span><span class="plan-price-period">/semestral</span></div>
           <p class="plan-note">Cobrança a cada 6 meses.</p>
           <ul class="plan-features">
             <li>Cadastro de turmas e alunos</li>
